@@ -220,7 +220,7 @@ main p{
     border-top: 1px solid #28839F;
     padding: 1em;
     margin:0;
-    flex: 1 1 45%;
+    flex: 1 1 47%;
     text-align: center;
     display: flex;
     flex-direction: row;
@@ -239,6 +239,7 @@ main p{
 }
 
 .main__skills--text--info{
+    flex: 1 0 55%;
     padding-left: 1em;
     text-align: justify;
 }
@@ -437,6 +438,15 @@ main p{
 
 
 @media screen and (max-width: 430px){
+
+    .main__skills--text{
+        flex-direction: column;
+    }
+
+    .main__skills--text--info h3{
+        text-align: center;
+    }
+
 
     .main__contact--data{
         border-right: 0px solid #00516B;
