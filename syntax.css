@@ -1,0 +1,438 @@
+body{
+    background: #fff;
+    margin: 0 auto;
+    padding: 0;
+    font-family: 'Open Sans', sans-serif;
+    color: #333333;
+}
+
+/* klasy headera*/
+header{
+    background-image: url('img/headerimg.png');
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.header__nav{
+    margin: 1em 0 1em 0;
+    width: 100%;
+    background-color: rgba(0,0,0,.2);
+}
+
+.header__nav ul{
+    margin: 0;
+    padding:0;
+    text-align: center;
+}
+
+.header__nav li{    
+    display: inline-block;
+    list-style-type: none;
+    padding: 0.7em 0 0.7em 0;
+    border-bottom:0.1em solid rgba(255,255,255,.8);
+    width: 10em;
+    margin: 0 0.5em 0 0.5em;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1em;
+    text-align: center;
+    font-weight: 500;
+    transition: border-bottom-color 0.8s ease-out,
+                background-color 0.8s ease-out;
+}
+
+.header__nav a{
+    color: white;
+    text-decoration: none;
+}
+
+.header__nav li:hover{
+    border-bottom-color: red;
+    background-color: rgba(0,57,77,0.3);
+}
+
+.header__main{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-self: center;
+}
+
+.header__main--title{
+    color: white;
+    display:flex;
+    flex-direction: column;
+    align-self: center;
+    margin-right: 2em;
+    margin-top: 2em;
+    width: 20em;
+    text-align: right;
+    text-shadow: black 0.1em 0.1em 0.2em;
+}
+
+.header__main--title--h1{
+    font-size: 50px;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.header__main--title--h2{
+    font-size: 20px;    
+}
+
+.header__main--motto{
+    font-size: 14px;
+    font-style: italic;
+    font-weight: bold;
+  }
+
+.header__main--motto p{
+    margin-top: 0px;
+    margin-bottom: 0px;
+    text-align: right;
+}
+
+.header__image{
+    align-self: center;
+    background-image: url('img/damian.png');
+    background-size: cover;
+    background-position: center;
+    width: 12em;
+    height: 11.6em;
+}
+
+/*klasy głownego obszaru i sekcji*/
+main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+
+}
+
+main section{
+    margin: 0;
+    padding: 1em 0 1em 0;
+    scroll-behavior: smooth;
+}
+
+main h2{
+    text-align: center;
+    font-size: 2em;
+    font-weight: 600;
+    margin: 0.2em 0 0.5em 0.2em;
+    width:100%;
+}
+
+main h3{
+    margin-top: 0;
+    margin-bottom: 0.8em;
+    font-size: 1.5em;
+    font-weight: 500;
+    text-align: left;
+    
+}
+
+main p{
+    margin: 0;
+    font-weight: lighter;
+    text-align: justify;
+}
+
+/*sekcja o mnie*/
+.main__about{
+    background: rgba(109, 160, 151, 0.1); /* #00A78C;*/
+    width: 100%;
+    color:#00516B;
+}
+
+.main__about__nav--text{
+    max-width: 1200px;
+    margin: 0 auto; 
+}
+
+.main__about--nav--text p{
+    padding: 1em;
+    text-align: center;
+}
+
+/*sekcja hobby*/
+.main__myHobbies{
+    background:rgba(6,108,122,0.9);/* #066C7A;* rgba(0,201,167,1);#00C9A7;*/
+    width:100%;
+    color: white;
+}
+
+.main__myHobbies--area{
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+   }
+
+.main__myHobbies--text{
+    display: flex;
+    align-items: center;
+    border-top: 1px solid white;
+    padding: 0.5em;
+    margin:0.3em;
+}
+
+.main__myHobbies--text--img{
+    min-width: 20%;
+    min-height: 100%;
+    background-size: cover;
+    background-position: center;
+}
+
+.main__myHobbies--text--img1{background-image: url('img/audiofile2.jpg');}
+.main__myHobbies--text--img2{background-image: url('img/dam_mustang.jpg');}
+.main__myHobbies--text--img3{background-image: url('img/f1-rk.jpeg');}
+.main__myHobbies--text--img4{background-image: url('img/brendy.jpg');}
+
+.main__myHobbies--text--info {
+    margin-left: 1em;
+}
+
+/*sekcja umiejętności */
+
+.main__skills{
+    background: rgba(213,233,241,0.5); /*#D5E9F1*/
+    width: 100%;
+    color:#00516B;
+}
+
+.main__skills--area{
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-self: center;
+}
+
+.main__skills--text{
+    border-top: 1px solid #28839F;
+    padding: 1em;
+    margin:0;
+    flex: 1 1 45%;
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+}
+.main__skills--text:nth-of-type(n+3){
+    border-bottom: 1px solid #28839F;
+}
+
+.main__skills--text--ikon{
+    align-self: center;
+    flex: 1 0 25%;
+    color: #28839F;
+    font-size: 5em;
+    padding: 0.2em;;
+    text-align: center;
+}
+
+.main__skills--text--info{
+    padding-left: 1em;
+    text-align: justify;
+}
+
+.main__skills--text--info h3{
+    margin-top: 0;
+}
+/* sekcja projekty*/
+.main__projects{
+    background: rgba(6,108,122,0.9);/* rgba(0,141,205,1); ,#FBEAFF*/
+    width:100%;
+    color: white;
+    padding-top: 2em;
+}
+
+.main__projects--area{
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-self: center;
+}
+
+.main__projects--text h3{
+    padding-bottom: 5px;
+}
+
+.main__projects--text{
+    border-top: 1px solid #fff;
+    padding: 1em;
+    margin:0;
+    min-width: 300px;
+    flex: 1 0 30%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+}
+.main__skills--text:nth-of-type(n+3){
+    border-bottom: 1px solid #28839F;
+}
+
+.main__projects--text--img{
+    flex: 0 1 30%;
+    min-height: 200px;
+    background-color:rgba(6,108,122,0.9);
+    background-size: cover;
+    background-position: center;
+    margin-bottom: 0.5em;
+    transition: all 2s 0.1s ease;
+}
+
+.main__projects--text--img1{background-image: url('img/Audiotesty.png');}
+.main__projects--text--img2{background-image: url('img/Tritum_crm.png');}
+.main__projects--text--img3{background-image: url('img/Sklep_pureandfresh.png');}
+.main__projects--text--img4{background-image: url('img/Taxomatic.png');}
+.main__projects--text--img5{background-image: url('img/dportfolio.png');}
+.main__projects--text--img6{background-image: url('img/desktop-solid_qm.png');}
+
+.main__projects--text--img:hover{
+    transform: scale(1.2);
+}
+
+/*style dla kontaktu*/
+.main__contact{
+    background: rgba(213,233,241,0.5);/* rgba(0,141,205,0.6); #008DCD*/
+    width:100%;
+    padding-top: 2em;
+}
+
+.main__contact--area{
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-self: center;
+    color:#00516B;
+}
+
+.main__contact--data{
+    border-right: 1px solid #00516B;
+    padding: 1em;
+    margin:0;
+    flex: 1 1 40%;
+}
+
+.main__contact--data p{
+    text-align: right;
+}
+
+.main__contact--data h3{
+    text-align: right;
+}
+
+.main__contact--media{
+    padding: 1em;
+    margin:0;
+    flex: 1 1 40%;
+    text-align: left;
+    align-self: center;
+}
+
+.main__contact--media p{
+    margin-bottom: 0.8em;
+    margin-right: 0.8em;
+}
+
+.main__contact--media a{
+    text-decoration: none;
+    color:#00516B;
+}
+
+.main__contact--media a:hover{
+    font-weight: 500;
+}
+
+
+
+.footer{
+    background: rgba(6,108,122,0.9);
+    color: #fff;
+    text-align: center;
+    padding: 1em;
+}
+
+.goTop{
+    position: fixed;
+    right: 3%;
+    bottom: 3%;
+ }
+
+.goTop a{
+    text-decoration: none;
+    text-align: center;
+    color: #0099cc;
+    cursor: pointer;
+    font-size: 5em;
+    max-width: 5em;
+    transition: all 0.3s linear;
+}
+
+.goTop a:hover{
+    font-size: 5.5em;
+    color:#00ace6;
+}
+
+
+
+    /*transition-timing-function: step-timing-function(4, jump-start);
+    transition-timing-function: cubic-bezier(0.1, 0.7, 1.0, 0.1); */
+
+
+@media screen and (max-width: 960px){
+
+    .header__main{
+        justify-content: center;
+    }
+
+    .header__nav ul{
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        align-content: center;
+        flex: 1 1 0;
+     }
+    .header__nav li{
+        padding: 0.5em 0.2em 0.5em 0.2em;
+        width: 9em;
+        margin: 0 0.2em 0 0.2em;
+        text-align: center;
+        font-size: 1em;
+    }
+
+    .header__nav li:hover{
+        border-bottom-color: red;
+    }
+}
+
+@media screen and (max-width: 430px){
+    .main__contact--data{
+        border-right: 0px solid #00516B;
+    }
+    
+    .main__contact--data p{
+        text-align: center;
+    }
+
+    
+    .main__contact--data h3{
+        text-align: center;
+    }
+    
+    .main__contact--media p{
+        text-align: center;
+    }
+    
+}
