@@ -170,22 +170,23 @@ main p{
     max-width: 1200px;
     margin: 0 auto;
     display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
+    flex-direction: column;
    }
 
 .main__myHobbies--text{
     display: flex;
-    flex-direction: row;
+    flex-direction:row;
+    flex-wrap: wrap;
     align-items: center;
     border-top: 1px solid white;
     padding: 0.5em;
     margin:0.3em;
+    justify-content: space-between;
 }
 
 .main__myHobbies--text--img{
-    min-width: 20%;
-    min-height: 100%;
+    flex: 0 1 15em;
+    min-height: 11em;;
     background-size: cover;
     background-position: center;
 }
@@ -196,6 +197,7 @@ main p{
 .main__myHobbies--text--img4{background-image: url('img/brendy.jpg');}
 
 .main__myHobbies--text--info {
+    flex: 1 1 50%;
     margin-left: 1em;
 }
 
@@ -416,28 +418,15 @@ main p{
     .header__nav li:hover{
         border-bottom-color: red;
     }
-
-    .main__myHobbies--text{
-        flex-direction: column;
-        flex-wrap: wrap;
-     }
-
-    .main__myHobbies--text--img{
-        min-width: 30%;
-        min-height: 100%;
-    }
-
- 
-    .main__myHobbies--text--info {
-        flex: 1 1 0;
-        margin-left: 1em;
-    }
 }
+
+@media screen and (max-width: 640px){
+    .main__myHobbies--text{
+        justify-content: center;
+    }
 
 
 @media screen and (max-width: 430px){
-
-
 
     .main__contact--data{
         border-right: 0px solid #00516B;
@@ -455,5 +444,4 @@ main p{
     .main__contact--media p{
         text-align: center;
     }
-    
 }
