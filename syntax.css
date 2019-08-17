@@ -176,6 +176,7 @@ main p{
 
 .main__myHobbies--text{
     display: flex;
+    flex-direction: row;
     align-items: center;
     border-top: 1px solid white;
     padding: 0.5em;
@@ -415,9 +416,29 @@ main p{
     .header__nav li:hover{
         border-bottom-color: red;
     }
+
+    .main__myHobbies--text{
+        flex-direction: column;
+        flex-wrap: wrap;
+     }
+
+    .main__myHobbies--text--img{
+        min-width: 30%;
+        min-height: 100%;
+    }
+
+ 
+    .main__myHobbies--text--info {
+        flex: 1 1 0;
+        margin-left: 1em;
+    }
 }
 
+
 @media screen and (max-width: 430px){
+
+
+
     .main__contact--data{
         border-right: 0px solid #00516B;
     }
