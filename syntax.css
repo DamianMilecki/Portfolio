@@ -109,8 +109,6 @@ main{
     display: flex;
     flex-direction: column;
     align-items: center;
-    
-
 }
 
 main section{
@@ -154,9 +152,9 @@ main p{
     margin: 0 auto; 
 }
 
-.main__about--nav--text p{
+.main__about__nav--text p{
     padding: 1em;
-    text-align: center;
+    
 }
 
 /*sekcja hobby*/
@@ -424,6 +422,18 @@ main p{
     .main__myHobbies--text{
         justify-content: center;
     }
+
+    .main__myHobbies--text--info {
+        flex: 1 1 65%;
+        margin-left: 0em;
+
+    }
+
+    .main__myHobbies--text--info h3{
+        text-align: center;
+    }
+
+
 
 
 @media screen and (max-width: 430px){
