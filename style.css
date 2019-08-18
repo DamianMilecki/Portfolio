@@ -282,9 +282,8 @@ main p{
 .section-projects__img{
     flex: 0 1 30%;
     min-height: 200px;
-    background-color:rgba(6,108,122,0.9);
     background-size: cover;
-    background-position: center;
+    background-position: top;
     margin-bottom: 0.5em;
     transition: all 2s 0.1s ease;
 }
