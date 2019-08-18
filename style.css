@@ -7,7 +7,7 @@ body{
 }
 
 /* klasy headera*/
-header{
+.site-header{
     background-image: url('img/headerimg.png');
     background-size: cover;
     background-position: center;
@@ -17,19 +17,19 @@ header{
     justify-content: center;
 }
 
-.header__nav{
+.site-header-nav{
     margin: 1em 0 1em 0;
     width: 100%;
     background-color: rgba(0,0,0,.2);
 }
 
-.header__nav ul{
+.site-header-nav ul{
     margin: 0;
     padding:0;
     text-align: center;
 }
 
-.header__nav li{    
+.site-header-nav li{    
     display: inline-block;
     list-style-type: none;
     padding: 0.7em 0 0.7em 0;
@@ -44,24 +44,24 @@ header{
                 background-color 0.8s ease-out;
 }
 
-.header__nav a{
+.site-header-nav a{
     color: white;
     text-decoration: none;
 }
 
-.header__nav li:hover{
+.site-header-nav li:hover{
     border-bottom-color: red;
     background-color: rgba(0,57,77,0.3);
 }
 
-.header__main{
+.site-header__text{
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     align-self: center;
 }
 
-.header__main--title{
+.site-header__title{
     color: white;
     display:flex;
     flex-direction: column;
@@ -73,29 +73,29 @@ header{
     text-shadow: black 0.1em 0.1em 0.2em;
 }
 
-.header__main--title--h1{
+.site-header__h1{
     font-size: 50px;
     margin-top: 0;
     margin-bottom: 0;
 }
 
-.header__main--title--h2{
+.site-header__h2{
     font-size: 20px;    
 }
 
-.header__main--motto{
+.site-header__motto{
     font-size: 14px;
     font-style: italic;
     font-weight: bold;
   }
 
-.header__main--motto p{
+.site-header__motto p{
     margin-top: 0px;
     margin-bottom: 0px;
     text-align: right;
 }
 
-.header__image{
+.site-header__image{
     align-self: center;
     background-image: url('img/damian2.png');
     background-size: cover;
@@ -141,37 +141,37 @@ main p{
 }
 
 /*sekcja o mnie*/
-.main__about{
+.section-about{
     background: rgba(231,251,254,0.5); /* e7fbfe;*/
     width: 100%;
     color:#055761;
 }
 
-.main__about__nav--text{
+.section-about__text{
     max-width: 1200px;
     margin: 0 auto; 
 }
 
-.main__about__nav--text p{
+.section-about__text p{
     padding: 1em;
     
 }
 
 /*sekcja hobby*/
-.main__myHobbies{
+.section-myHobbies{
     background:rgba(6,108,122,0.9);/* #066C7A;* rgba(0,201,167,1);#00C9A7;*/
     width:100%;
     color: white;
 }
 
-.main__myHobbies--area{
+.section-myHobbies__area{
     max-width: 1200px;
     margin: 0 auto;
     display: flex;
     flex-direction: column;
    }
 
-.main__myHobbies--text{
+.section-myHobbies__text{
     display: flex;
     flex-direction:row;
     flex-wrap: wrap;
@@ -182,32 +182,32 @@ main p{
     justify-content: space-between;
 }
 
-.main__myHobbies--text--img{
+.section-myHobbies__img{
     flex: 0 1 15em;
     min-height: 11em;;
     background-size: cover;
     background-position: center;
 }
 
-.main__myHobbies--text--img1{background-image: url('img/audiofile2.jpg');}
-.main__myHobbies--text--img2{background-image: url('img/dam_mustang.jpg');}
-.main__myHobbies--text--img3{background-image: url('img/f1-rk.jpeg');}
-.main__myHobbies--text--img4{background-image: url('img/brendy.jpg');}
+.section-myHobbies__img1{background-image: url('img/audiofile2.jpg');}
+.section-myHobbies__img2{background-image: url('img/dam_mustang.jpg');}
+.section-myHobbies__img3{background-image: url('img/f1-rk.jpeg');}
+.section-myHobbies__img4{background-image: url('img/brendy.jpg');}
 
-.main__myHobbies--text--info {
+.section-myHobbies__info {
     flex: 1 1 50%;
     margin-left: 1em;
 }
 
 /*sekcja umiejętności */
 
-.main__skills{
+.section-skills{
     background: rgba(231,251,254,0.5);
     width: 100%;
     color:#055761;
 }
 
-.main__skills--area{
+.section-skills__area{
     max-width: 1200px;
     margin: 0 auto;
     display: flex;
@@ -216,7 +216,7 @@ main p{
     justify-self: center;
 }
 
-.main__skills--text{
+.section-skills__text{
     border-top: 1px solid #066C7A;
     padding: 1em;
     margin:0;
@@ -225,11 +225,11 @@ main p{
     display: flex;
     flex-direction: row;
 }
-.main__skills--text:nth-of-type(n+3){
+.section-skills__text:nth-of-type(n+3){
     border-bottom: 1px solid #066C7A;
 }
 
-.main__skills--text--ikon{
+.section-skills__ikon{
     align-self: center;
     flex: 1 0 25%;
     color: #078292;
@@ -238,24 +238,24 @@ main p{
     text-align: center;
 }
 
-.main__skills--text--info{
+.section-skills__info{
     flex: 1 0 55%;
     padding-left: 1em;
     text-align: justify;
 }
 
-.main__skills--text--info h3{
+.section-skills__info h3{
     margin-top: 0;
 }
 /* sekcja projekty*/
-.main__projects{
+.section-projects{
     background: rgba(6,108,122,0.9);/* rgba(0,141,205,1); ,#FBEAFF*/
     width:100%;
     color: white;
     padding-top: 2em;
 }
 
-.main__projects--area{
+.section-projects__area{
     max-width: 1200px;
     margin: 0 auto;
     display: flex;
@@ -264,11 +264,11 @@ main p{
     justify-self: center;
 }
 
-.main__projects--text h3{
+.section-projects__text h3{
     padding-bottom: 5px;
 }
 
-.main__projects--text{
+.section-projects__text{
     border-top: 1px solid #fff;
     padding: 1em;
     margin:0;
@@ -278,11 +278,8 @@ main p{
     display: flex;
     flex-direction: column;
 }
-.main__skills--text:nth-of-type(n+3){
-    border-bottom: 1px solid #28839F;
-}
 
-.main__projects--text--img{
+.section-projects__img{
     flex: 0 1 30%;
     min-height: 200px;
     background-color:rgba(6,108,122,0.9);
@@ -292,25 +289,25 @@ main p{
     transition: all 2s 0.1s ease;
 }
 
-.main__projects--text--img1{background-image: url('img/Audiotesty.png');}
-.main__projects--text--img2{background-image: url('img/Tritum_crm.png');}
-.main__projects--text--img3{background-image: url('img/Sklep_pureandfresh.png');}
-.main__projects--text--img4{background-image: url('img/Taxomatic.png');}
-.main__projects--text--img5{background-image: url('img/dportfolio.png');}
-.main__projects--text--img6{background-image: url('img/desktop-solid_qm.png');}
+.section-projects__img1{background-image: url('img/Audiotesty.png');}
+.section-projects__img2{background-image: url('img/Tritum_crm.png');}
+.section-projects__img3{background-image: url('img/Sklep_pureandfresh.png');}
+.section-projects__img4{background-image: url('img/Taxomatic.png');}
+.section-projects__img5{background-image: url('img/dportfolio.png');}
+.section-projects__img6{background-image: url('img/desktop-solid_qm.png');}
 
-.main__projects--text--img:hover{
+.section-projects__img:hover{
     transform: scale(1.2);
 }
 
 /*style dla kontaktu*/
-.main__contact{
+.section-contact{
     background: rgba(231,251,254, 0.5);/* rgba(0,141,205,0.6); #008DCD*/
     width:100%;
     padding-top: 2em;
 }
 
-.main__contact--area{
+.section-contact__area{
     max-width: 1200px;
     margin: 0 auto;
     display: flex;
@@ -320,22 +317,22 @@ main p{
     color:#055761;
 }
 
-.main__contact--data{
+.section-contact__data{
     padding: 1em;
     margin:0;
     flex: 1 1 40%;
     border-right: 1px solid #066C7A;
 }
 
-.main__contact--data p{
+.section-contact__data p{
     text-align: right;
 }
 
-.main__contact--data h3{
+.section-contact__data h3{
     text-align: right;
 }
 
-.main__contact--media{
+.section-contact__media{
     padding: 1em;
     margin:0;
     flex: 1 1 40%;
@@ -343,17 +340,17 @@ main p{
     align-self: center;
 }
 
-.main__contact--media p{
+.section-contact__media p{
     margin-bottom: 0.8em;
     margin-right: 0.8em;
 }
 
-.main__contact--media a{
+.section-contact__media a{
     text-decoration: none;
     color:#055761;
 }
 
-.main__contact--media a:hover{
+.section-contact__media a:hover{
     font-weight: 500;
 }
 
@@ -366,7 +363,7 @@ main p{
     padding: 1em;
 }
 
-.goTop{
+.go-top{
     position: fixed;
     right: 2%;
     bottom: 2%;
@@ -374,7 +371,7 @@ main p{
     text-align: center;
  }
 
-.goTop a{
+.go-top a{
     text-decoration: none;
     text-align: center;
     color: #09adc3;
@@ -383,25 +380,25 @@ main p{
     transition: all 0.3s linear;
 }
 
-.goTop a:hover{
+.go-top a:hover{
     font-size: 5em;
     color:#0ac3db;
 }
 
 @media screen and (max-width: 960px){
 
-    .header__main{
+    .site-header{
         justify-content: center;
     }
 
-    .header__nav ul{
+    .site-header ul{
         display: flex;
         flex-wrap: wrap;
         flex-direction: column;
         align-content: center;
         flex: 1 1 0;
      }
-    .header__nav li{
+    .site-header li{
         padding: 0.5em 0.2em 0.5em 0.2em;
         width: 9em;
         margin: 0 0.2em 0 0.2em;
@@ -409,23 +406,26 @@ main p{
         font-size: 1em;
     }
 
-    .header__nav li:hover{
+    .site-header__nav li:hover{
         border-bottom-color: red;
     }
 }
 
 @media screen and (max-width: 640px){
-    .main__myHobbies--text{
+
+    .site-header__text{
+        flex-direction: column;
+    }
+    .section-myHobbies__text{
         justify-content: center;
     }
 
-    .main__myHobbies--text--info {
+    .section-myHobbies__info {
         flex: 1 1 65%;
         margin-left: 0em;
-
     }
 
-    .main__myHobbies--text--info h3{
+    .section-myHobbies__info h3{
         text-align: center;
     }
 }
@@ -434,33 +434,33 @@ main p{
 
 @media screen and (max-width: 430px){
 
-    .main__skills--text{
+    .section-skills__text{
         flex-direction: column;
         padding-left: 0em;
     }
 
-    .main__skills--text--info h3{
+    .section-skills__info h3{
         text-align: center;
     }
 
-    .main__contact--data{
+    .section-contact__data{
         border-right: none;
         flex: 1 1 45%;
     }
     
-    .main__contact--data p{
+    .section-contact__data p{
         text-align: center;
     }
 
-    .main__contact--data h3{
+    .section-contact__data h3{
         text-align: center;
     }
     
-    .main__contact--media p{
+    .section-contact__media p{
         text-align: center;
     }
 
-    .goTop a:hover{
+    .go-top a:hover{
         font-size: 4em;
         color:#0ac3db;
     }

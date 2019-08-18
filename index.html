@@ -5,43 +5,39 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Damian's portfolio</title>
-    <link rel="stylesheet" type="text/css" href="syntax.css" />
-    <link href="https://fonts.googleapis.com/css?family=Titillium+Web&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Oswald&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="style.css" />
     <link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300,300i,700&display=swap" rel="stylesheet">
-    <link
-        href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i&display=swap"
-        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/a1b4fe7711.js"></script>
 </head>
 
 <body>
-    <header class="header" id="header--nav">
+    <header id="nav-header" class="site-header" >
 
-        <nav class="header__nav">
+        <nav class="site-header-nav">
             <ul>
-                <li><a href="#about--nav">O MNIE</a></li>
-                <li><a href="#myHobbies--nav">ZAINTERESOWANIA</a></li>
-                <li><a href="#skills-nav">UMIEJĘTNOŚCI</a></li>
-                <li><a href="#projects--nav">PROJEKTY</a></li>
-                <li><a href="#contact--nav">KONTAKT</a></li>
+                <li><a href="#nav-about">O MNIE</a></li>
+                <li><a href="#nav-my-hobbies">ZAINTERESOWANIA</a></li>
+                <li><a href="#nav-skills">UMIEJĘTNOŚCI</a></li>
+                <li><a href="#nav-projects">PROJEKTY</a></li>
+                <li><a href="#nav-contact">KONTAKT</a></li>
             </ul>
         </nav>
 
-        <div class="header__main">
-            <div class="header__main--title">
-                <h1 class="header__main--title--h1">Damian Milecki</h1>
-                <h2 class="header__main--title--h2">portfolio</h2>
-                <p class="header__main--motto">"cokolwiek czynisz mądrze czyń i oczekuj końca"</p>
+        <section class="site-header__text">
+            <div class="site-header__title">
+                <h1 class="site-header__h1">Damian Milecki</h1>
+                <h2 class="site-header__h2">portfolio</h2>
+                <p class="site-header__motto">"cokolwiek czynisz mądrze czyń i oczekuj końca"</p>
             </div>
-            <div class="header__image"></div>
-        </div>
+            <div class="site-header__image"></div>
+        </section>
 
     </header>
 
     <main>
-        <section id="about--nav" class="main__about">
-            <div class="main__about__nav--text">
+        <section id="nav-about" class="section-about">
+            <div class="section-about__text">
                 <h2>Parę ciepłych słów o mnie </h2>
                 <p>Od czasów, kiedy komputery pojawiły się do użytku domowego, informatyka i wszystko co z nią związane
                     to moje hobby i praca. Do tej pory głównie zajmowałem się zarządzaniem projektami i dopasowywaniem
@@ -54,12 +50,12 @@
             </div>
         </section>
 
-        <section id="myHobbies--nav" class="main__myHobbies">
-            <div class="main__myHobbies--area">
+        <section id="nav-my-hobbies" class="section-myHobbies">
+            <div class="section-myHobbies__area">
                 <h2>Zainteresowania </h2>
-                <div class="main__myHobbies--text">
-                    <div class="main__myHobbies--text--img main__myHobbies--text--img1"></div>
-                    <div class="main__myHobbies--text--info">
+                <div class="section-myHobbies__text">
+                    <div class="section-myHobbies__img section-myHobbies__img1"></div>
+                    <div class="section-myHobbies__info">
                         <h3>Sprzęt audio</h3>
                         <p>Sprzęt audio tzw. sprzęt audiofilski interesuje mnie od wielu lat. Posiadam średniej klasy
                             rozwiązanie, które daje dużo radości z słuchania ulubionej muzyki. Jakość dźwięku jaką
@@ -72,9 +68,9 @@
                         </p>
                     </div>
                 </div>
-                <div class="main__myHobbies--text">
-                    <div class="main__myHobbies--text--img main__myHobbies--text--img2"></div>
-                    <div class="main__myHobbies--text--info">
+                <div class="section-myHobbies__text">
+                    <div class="section-myHobbies__img section-myHobbies__img2"></div>
+                    <div class="section-myHobbies__info">
                         <h3>Samochody</h3>
                         <p>Samochody, uwielbiam. Lubię jeździć, rozmawiać o nich i marzyć o najpiękniejszych i
                             najfajniejszych z nich. Uwielbiam o nich słuchać, oglądać programy motoryzacyjne takie jak
@@ -86,9 +82,9 @@
                         </p>
                     </div>
                 </div>
-                <div class="main__myHobbies--text">
-                    <div class="main__myHobbies--text--img main__myHobbies--text--img3"></div>
-                    <div class="main__myHobbies--text--info">
+                <div class="section-myHobbies__text">
+                    <div class="section-myHobbies__img section-myHobbies__img3"></div>
+                    <div class="section-myHobbies__info">
                         <h3>Formuła 1</h3>
                         <p>Skoro samochody, to również samochody w najbardziej wyrafinowanym wydaniu tj. w samochodach
                             formuły 1. Moja fascynacja tym sportem wynika nie tylko dla tego, ze mamy Roberta Kubicę,
@@ -100,9 +96,9 @@
                         </p>
                     </div>
                 </div>
-                <div class="main__myHobbies--text">
-                    <div class="main__myHobbies--text--img main__myHobbies--text--img4"></div>
-                    <div class="main__myHobbies--text--info">
+                <div class="section-myHobbies__text">
+                    <div class="section-myHobbies__img section-myHobbies__img4"></div>
+                    <div class="section-myHobbies__info">
                         <h3>Dobry alkohol</h3>
                         <p>Zainteresowałem się dobrym alkoholem ponieważ znudziło mi się takie picie dla picia. Dobry
                             alkohol typu whiski, brendy, rum czy dobra wódka albo nawet wino, charakteryzują się
@@ -115,14 +111,14 @@
                 </div>
             </div>
         </section>
-        <section id="skills-nav" class="main__skills">
-            <div class="main__skills--area">
+        <section id="nav-skills" class="section-skills">
+            <div class="section-skills__area">
                 <h2>Umiejętności</h2>
-                <div class="main__skills--text">
-                    <div class="main__skills--text--ikon">
+                <div class="section-skills__text">
+                    <div class="section-skills__ikon">
                         <i class="fas fa-project-diagram"></i>
                     </div>
-                    <div class="main__skills--text--info">
+                    <div class="section-skills__info">
                         <h3>Analiza wymagań biznesowych</h3>
                         <p>Zrealizowałem wiele projektów, w których odgrywałem kluczową rolę w zakresie analizy wymagań
                             biznesowych i zaprojektowania rozwiązań optymalnych dla organizacji. Moja rola polegała też
@@ -131,11 +127,11 @@
                         </p>
                     </div>
                 </div>
-                <div class="main__skills--text">
-                    <div class="main__skills--text--ikon">
+                <div class="section-skills__text">
+                    <div class="section-skills__ikon">
                         <i class="fas fa-tasks"></i>
                     </div>
-                    <div class="main__skills--text--info">
+                    <div class="section-skills__info">
                         <h3>Zarządzanie projektem</h3>
                         <p>Z powodzeniem zrealizowałem kilka dużych projektów polegających na zaprojektowaniu i
                             zbudowaniu dedykowanego oprogramowania do zarządzania procesami wewnątrz firmy. Były to
@@ -146,11 +142,11 @@
                         </p>
                     </div>
                 </div>
-                <div class="main__skills--text">
-                    <div class="main__skills--text--ikon">
+                <div class="section-skills__text">
+                    <div class="section-skills__ikon">
                         <i class="fas fa-database"></i>
                     </div>
-                    <div class="main__skills--text--info">
+                    <div class="section-skills__info">
                         <h3>SQL</h3>
                         <p> W mojej pracy często musiałem sam dokonywać analiz z wiązanych w projektowanym
                             oprogramowaniem
@@ -160,11 +156,11 @@
                         </p>
                     </div>
                 </div>
-                <div class="main__skills--text">
-                    <div class="main__skills--text--ikon">
+                <div class="section-skills__text">
+                    <div class="section-skills__ikon">
                         <i class="fas fa-laptop-code"></i>
                     </div>
-                    <div class="main__skills--text--info">
+                    <div class="section-skills__info">
                         <h3>Programowanie Front-end</h3>
                         <p>
                             Rozpocząłem naukę programowania forntendowego. Moje wiadomości z dnia na dzień są coraz
@@ -175,20 +171,20 @@
                 </div>
             </div>
         </section>
-        <section id="projects--nav" class="main__projects">
-            <div class="main__projects--area">
+        <section id="nav-projects" class="section-projects">
+            <div class="section-projects__area">
                 <h2>Projekty</h2>
-                <div class="main__projects--text">
+                <div class="section-projects__text">
                     <h3>Audiotesty</h3>
-                    <div class="main__projects--text--img main__projects--text--img1"></div>
+                    <div class="section-projects__img section-projects__img1"></div>
                     <p>
                         Projekt zrealizowany z moim synem na WodPressie. Stworzyliśmy logo, szatę graficzną i
                         dostosowaliśmy wybrany szablon do naszych potrzeb.
                     </p>
                 </div>
-                <div class="main__projects--text">
+                <div class="section-projects__text">
                     <h3>Tritum CRM</h3>
-                    <div class="main__projects--text--img main__projects--text--img2"></div>
+                    <div class="section-projects__img section-projects__img2"></div>
                     <p>
                         Zebranie wymagań biznesowych, zaprojektowanie oraz nadzór nad wykonaniem i utrzymaniem. Program
                         do obsługi sieci agentów kredytowych firmy Tritum. Program napisany w technologiach webowych.
@@ -196,9 +192,9 @@
                         gotówkowych. Program rozlicza również prowizje dla całej sieci sprzedaży.
                     </p>
                 </div>
-                <div class="main__projects--text">
+                <div class="section-projects__text">
                     <h3>Sklep PUREandFRESH</h3>
-                    <div class="main__projects--text--img main__projects--text--img3"></div>
+                    <div class="section-projects__img section-projects__img3"></div>
                     <p>
                         Analiza biznesowa procesów, projekt systemu, nadzór nad wykonaniem i utrzymaniem programu.
                         Program jest kompletną platformą do zarządzania firmą cateringu dietetycznego. Zawiera część dla
@@ -207,9 +203,9 @@
                         pod drzwi klienta.
                     </p>
                 </div>
-                <div class="main__projects--text">
+                <div class="section-projects__text">
                     <h3>Taxomatic</h3>
-                    <div class="main__projects--text--img main__projects--text--img4"></div>
+                    <div class="section-projects__img section-projects__img4"></div>
                     <p>
                         Analiza biznesowa procesów, projekt systemu, nadzór nad wykonaniem i utrzymaniem programu.
                         Program jest kompletną platformą do zarządzania firmą cateringu dietetycznego. Zawiera część dla
@@ -218,26 +214,26 @@
                         pod drzwi klienta.
                     </p>
                 </div>
-                <div class="main__projects--text">
+                <div class="section-projects__text">
                     <h3>Ta strona o mnie</h3>
-                    <div class="main__projects--text--img main__projects--text--img5"></div>
+                    <div class="section-projects__img section-projects__img5"></div>
                     <p>
                         Moje portfolio – strona wykonana przy pomocy html i ccs-a. Dotyczy informacjo o mnie.
                     </p>
                 </div>
-                <div class="main__projects--text">
+                <div class="section-projects__text">
                     <h3>Miejsce na nowy projekt</h3>
-                    <div class="main__projects--text--img main__projects--text--img6 "></div>
+                    <div class="section-projects__img section-projects__img6 "></div>
                     <p>
                         Miejsce na kolejny projekt - może to właśnie miejsce na Twój projekt.
                     </p>
                 </div>
             </div>
         </section>
-        <section id="contact--nav" class="main__contact">
-            <div class="main__contact--area">
+        <section id="nav-contact" class="section-contact">
+            <div class="section-contact__area">
                 <h2>Kontakt</h2>
-                <div class="main__contact--data">
+                <div class="section-contact__data">
                     <h3>DM7.pl<br>
                         Damian Milecki</h3>
                     <p>
@@ -247,7 +243,7 @@
                     </p>
 
                 </div>
-                <div class="main__contact--media">
+                <div class="section-contact__media">
 
                     <p><i class="far fa-envelope"></i> <a href="mailto:damian.milecki@dm7.pl">damian.milecki@dm7.pl</a>
                     </p>
@@ -260,8 +256,8 @@
         </section>
 
     </main>
-    <div class="goTop">
-        <a href="#header--nav">
+    <div class="go-top">
+        <a href="#nav-header">
             <i class="fas fa-angle-double-up"></i>
         </a>
     </div>
