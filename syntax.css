@@ -142,9 +142,9 @@ main p{
 
 /*sekcja o mnie*/
 .main__about{
-    background: rgba(109, 160, 151, 0.1); /* #00A78C;*/
+    background: rgba(231,251,254,0.9); /* e7fbfe;*/
     width: 100%;
-    color:#00516B;
+    color:#055761;
 }
 
 .main__about__nav--text{
@@ -202,9 +202,9 @@ main p{
 /*sekcja umiejętności */
 
 .main__skills{
-    background: rgba(213,233,241,0.5); /*#D5E9F1*/
+    background: rgba(231,251,254,0.9);
     width: 100%;
-    color:#00516B;
+    color:#055761;
 }
 
 .main__skills--area{
@@ -217,7 +217,7 @@ main p{
 }
 
 .main__skills--text{
-    border-top: 1px solid #28839F;
+    border-top: 1px solid #066C7A;
     padding: 1em;
     margin:0;
     flex: 1 1 47%;
@@ -226,13 +226,13 @@ main p{
     flex-direction: row;
 }
 .main__skills--text:nth-of-type(n+3){
-    border-bottom: 1px solid #28839F;
+    border-bottom: 1px solid #066C7A;
 }
 
 .main__skills--text--ikon{
     align-self: center;
     flex: 1 0 25%;
-    color: #28839F;
+    color: #078292;
     font-size: 5em;
     padding: 0.2em;;
     text-align: center;
@@ -305,7 +305,7 @@ main p{
 
 /*style dla kontaktu*/
 .main__contact{
-    background: rgba(213,233,241,0.5);/* rgba(0,141,205,0.6); #008DCD*/
+    background: rgba(231,251,254, 0.9);/* rgba(0,141,205,0.6); #008DCD*/
     width:100%;
     padding-top: 2em;
 }
@@ -317,14 +317,14 @@ main p{
     flex-wrap: wrap;
     flex-direction: row;
     justify-self: center;
-    color:#00516B;
+    color:#055761;
 }
 
 .main__contact--data{
-    border-right: 1px solid #00516B;
     padding: 1em;
     margin:0;
     flex: 1 1 40%;
+    border-right: 1px solid #066C7A;
 }
 
 .main__contact--data p{
@@ -350,7 +350,7 @@ main p{
 
 .main__contact--media a{
     text-decoration: none;
-    color:#00516B;
+    color:#055761;
 }
 
 .main__contact--media a:hover{
@@ -368,23 +368,24 @@ main p{
 
 .goTop{
     position: fixed;
-    right: 3%;
-    bottom: 3%;
+    right: 2%;
+    bottom: 2%;
+    width: 4em;
+    text-align: center;
  }
 
 .goTop a{
     text-decoration: none;
     text-align: center;
-    color: #0099cc;
+    color: #09adc3;
     cursor: pointer;
-    font-size: 5em;
-    max-width: 5em;
+    font-size: 4em;
     transition: all 0.3s linear;
 }
 
 .goTop a:hover{
-    font-size: 5.5em;
-    color:#00ace6;
+    font-size: 5em;
+    color:#0ac3db;
 }
 
 
@@ -441,15 +442,16 @@ main p{
 
     .main__skills--text{
         flex-direction: column;
+        padding-left: 0em;
     }
 
     .main__skills--text--info h3{
         text-align: center;
     }
 
-
     .main__contact--data{
-        border-right: 0px solid #00516B;
+        border-right: none;
+        flex: 1 1 45%;
     }
     
     .main__contact--data p{
