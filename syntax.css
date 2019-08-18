@@ -97,7 +97,7 @@ header{
 
 .header__image{
     align-self: center;
-    background-image: url('img/damian.png');
+    background-image: url('img/damian2.png');
     background-size: cover;
     background-position: center;
     width: 12em;
@@ -142,7 +142,7 @@ main p{
 
 /*sekcja o mnie*/
 .main__about{
-    background: rgba(231,251,254,0.9); /* e7fbfe;*/
+    background: rgba(231,251,254,0.5); /* e7fbfe;*/
     width: 100%;
     color:#055761;
 }
@@ -202,7 +202,7 @@ main p{
 /*sekcja umiejętności */
 
 .main__skills{
-    background: rgba(231,251,254,0.9);
+    background: rgba(231,251,254,0.5);
     width: 100%;
     color:#055761;
 }
@@ -305,7 +305,7 @@ main p{
 
 /*style dla kontaktu*/
 .main__contact{
-    background: rgba(231,251,254, 0.9);/* rgba(0,141,205,0.6); #008DCD*/
+    background: rgba(231,251,254, 0.5);/* rgba(0,141,205,0.6); #008DCD*/
     width:100%;
     padding-top: 2em;
 }
@@ -388,12 +388,6 @@ main p{
     color:#0ac3db;
 }
 
-
-
-    /*transition-timing-function: step-timing-function(4, jump-start);
-    transition-timing-function: cubic-bezier(0.1, 0.7, 1.0, 0.1); */
-
-
 @media screen and (max-width: 960px){
 
     .header__main{
@@ -434,7 +428,7 @@ main p{
     .main__myHobbies--text--info h3{
         text-align: center;
     }
-
+}
 
 
 
@@ -458,12 +452,16 @@ main p{
         text-align: center;
     }
 
-    
     .main__contact--data h3{
         text-align: center;
     }
     
     .main__contact--media p{
         text-align: center;
+    }
+
+    .goTop a:hover{
+        font-size: 4em;
+        color:#0ac3db;
     }
 }
